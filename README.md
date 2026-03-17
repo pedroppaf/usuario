@@ -1,109 +1,75 @@
-# API REST de Usuários com Spring Boot, JWT e Docker
+# Serviço de Usuários
 
-Este projeto é uma API REST desenvolvida utilizando Java e Spring Boot para gerenciamento de usuários, com autenticação segura baseada em JWT, persistência em banco PostgreSQL e execução containerizada com Docker.
+Microsserviço backend desenvolvido com **Java** e **Spring Boot** responsável pelo gerenciamento e autenticação de usuários dentro de uma arquitetura de microsserviços.
 
-O objetivo deste projeto é demonstrar conhecimentos práticos em desenvolvimento backend, arquitetura em camadas, segurança com Spring Security e integração com serviços externos.
-
----
-
-## Tecnologias Utilizadas
-
-- Java
-- Spring Boot
-- Spring Security
-- JWT (JSON Web Token)
-- Spring Data JPA
-- PostgreSQL
-- Spring Cloud OpenFeign
-- Swagger 
-- Docker
-- Docker Compose
-- Gradle
-- Git
+Este serviço centraliza funcionalidades relacionadas a cadastro, autenticação e controle de acesso, servindo como base para o funcionamento dos demais serviços do sistema.
 
 ---
 
-## Funcionalidades
+## Objetivo do serviço
 
-- Cadastro de usuários
-- Autenticação com JWT
-- Autorização baseada em token
-- Consulta de usuário por email
-- Atualização de dados do usuário
-- Cadastro e atualização de endereço
-- Cadastro e atualização de telefone
-- Integração com API ViaCEP
-- Documentação automática com Swagger
-- Containerização com Docker
+Este microsserviço foi desenvolvido com foco em:
+
+- gerenciamento de usuários
+- autenticação e autorização
+- controle de acesso
+- separação de responsabilidades em arquitetura distribuída
+- boas práticas no desenvolvimento backend com Spring Boot
 
 ---
 
-## Arquitetura
+## Responsabilidades
 
-O projeto segue arquitetura em camadas:
-Controller → Service → Repository → Database
-
-Também inclui camada de segurança:
-Security → JWT Filter → Authentication → Authorization
-
-
----
-
-## Banco de Dados
-
-Banco utilizado: PostgreSQL
+- cadastro de usuários
+- autenticação de acesso
+- validação de credenciais
+- suporte ao fluxo de segurança do sistema
+- integração com outros serviços da arquitetura
 
 ---
 
-## Segurança
+## Tecnologias utilizadas
 
-Este projeto implementa autenticação e autorização utilizando:
-
-- Spring Security
-- JWT (JSON Web Token)
-- Stateless Authentication
-
-Fluxo de autenticação:
-
-1. Usuário faz login
-2. Recebe um JWT
-3. Usa o token para acessar endpoints protegidos
+- **Java**
+- **Spring Boot**
+- **Spring Security**
+- **JWT**
+- **Spring Data JPA**
+- **PostgreSQL**
+- **Docker**
+- **Git / GitHub**
 
 ---
 
-## Integração Externa
+## Conceitos aplicados
 
-O projeto integra com a API ViaCEP para consulta de endereço via CEP.
-
-Utilizando:
-
-- Spring Cloud OpenFeign
-
----
-
-## Objetivo do Projeto
-
-Este projeto foi desenvolvido com foco em demonstrar competências em:
-
-- Desenvolvimento backend com Java
-- Criação de APIs REST
-- Segurança com Spring Security e JWT
-- Persistência de dados com JPA
-- Integração com serviços externos
-- Containerização com Docker
-- Arquitetura limpa e organizada
+- desenvolvimento de APIs REST
+- autenticação e autorização
+- segurança com Spring Security
+- geração e validação de JWT
+- persistência de dados
+- arquitetura em microsserviços
+- separação de responsabilidades
 
 ---
 
-## Links
+## Como executar o projeto
 
-LinkedIn: https://linkedin.com/in/pedroppaf  
-GitHub: https://github.com/pedroppaf
+### Pré-requisitos
 
----
+- Java instalado
+- PostgreSQL configurado
+- IDE de sua preferência
 
-## Status do Projeto
+### Passos
 
-Projeto funcional e pronto para execução local via Docker.
+1. Clone o repositório:
 
+```bash
+git clone https://github.com/pedroppaf/usuario.git
+
+
+### Papel na arquitetura
+
+Este serviço faz parte de um sistema maior estruturado em microsserviços, atuando como responsável pela camada de identidade e autenticação dos usuários.
 
