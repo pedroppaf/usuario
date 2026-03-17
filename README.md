@@ -69,6 +69,8 @@ Este microsserviço foi desenvolvido com foco em:
 git clone https://github.com/pedroppaf/usuario.git
 
 
+---
+
 ## Papel na arquitetura
 
 Este serviço faz parte de um sistema maior estruturado em microsserviços, atuando como responsável pela camada de identidade e autenticação dos usuários.
