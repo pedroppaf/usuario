@@ -4,6 +4,8 @@ Microsserviço backend desenvolvido com **Java** e **Spring Boot** responsável 
 
 Este serviço centraliza funcionalidades relacionadas a cadastro, autenticação e controle de acesso, servindo como base para o funcionamento dos demais serviços do sistema.
 
+Este serviço faz parte de um sistema maior estruturado em microsserviços, atuando como responsável pela camada de identidade e autenticação dos usuários.
+
 ---
 
 ## Objetivo do serviço
@@ -67,11 +69,4 @@ Este microsserviço foi desenvolvido com foco em:
 
 ```bash
 git clone https://github.com/pedroppaf/usuario.git
-
-
----
-
-## Papel na arquitetura
-
-Este serviço faz parte de um sistema maior estruturado em microsserviços, atuando como responsável pela camada de identidade e autenticação dos usuários.
 
